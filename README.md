@@ -4,10 +4,10 @@
 
 ---
 
-![output 1](media/op1.jpg)
-![output 2](media/op2.jpg)
-![output 3](media/op3.jpg)
-![output 4](media/op4.jpg)
-![output 5](media/op5.jpg)
-![output 6](media/op6.jpg)
-![output 7](media/op7.jpg)
+![output 1](media/op1.JPG)
+![output 2](media/op2.JPG)
+![output 3](media/op3.JPG)
+![output 4](media/op4.JPG)
+![output 5](media/op5.JPG)
+![output 6](media/op6.JPG)
+![output 7](media/op7.JPG)
