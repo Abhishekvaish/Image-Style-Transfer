@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		index Page
+	</title>
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+<nav>
+	<a href="">
+		Style Transfer
+	</a>
+</nav>
+
+<form action = "/" method = "POST" enctype = "multipart/form-data">
+	<input type = "file" name="file" id="file" accept="image/*" required="true" />
+	<label id="custom-label" for="file">
+		<i class="material-icons">
+			add_photo_alternate
+		</i>
+		Choose a File
+	</label>
+
+	<input type = "submit"/>
+</form>
+
+<!-- <div class="container">
+	<div class="card">
+		<img src="5.jpg" width="400" height="400">	
+		<p>Real Image</p>
+	</div>
+	<div class="card">
+		<img src="5.jpg" width="400" height="400">	
+		<p>Generated Image</p> 
+	</div>
+</div> -->
+
+
+{% if data %}
+	<div class="container">
+		<div class="card">
+			<img src="{{ data.ip_uri }}"  width="400" height="400">	
+			<p>Real Image</p>
+		</div>
+		<div class="card">
+			<img src="{{ data.op_uri }}"  width="400" height="400">	
+			<p>Generated Image</p> 
+		</div>
+	</div>
+{% endif %}
+<script type="text/javascript">
+	filebtn = document.getElementById("file")
+	label = document.getElementById("custom-label")
+	filebtn.addEventListener("change" , function(){
+		label.innerText = filebtn.files[0].name
+	})
+</script>
+</body>
+</html>
